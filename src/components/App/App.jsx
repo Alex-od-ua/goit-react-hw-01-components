@@ -1,3 +1,5 @@
+// import PropTypes from 'prop-types';
+
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 import { FriendList } from 'components/FriendList/FriendList';
@@ -7,11 +9,12 @@ import user from '../../json/user.json';
 import data from '../../json/data.json';
 import friends from '../../json/friends.json';
 import transactions from '../../json/transactions.json';
-// import PropTypes from 'prop-types';
+
+import css from './App.module.css';
 
 export const App = () => {
   return (
-    <div>
+    <div className={css.container}>
       <Profile
         userName={user.username}
         tag={user.tag}

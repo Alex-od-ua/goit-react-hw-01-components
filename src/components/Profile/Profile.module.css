@@ -1,61 +1,81 @@
 .profile {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.501), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.737);
-  border-radius: 0px 0px 14px 14px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #eeeed9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  width: 350px;
+  border: 1px solid #180352;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 .avatar {
-  width: 250px;
-  padding-top: 50px;
+  display: block;
+  height: 220px;
+  width: 200px;
 }
 .name {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: calc(30 / 25);
-  align-items: center;
-  text-align: center;
-  color: brown;
-  margin-top: 10px;
+  font-size: 22px;
+  line-height: 1.62;
+  color: #22076c;
+  margin-top: 20px;
 }
 .stats {
+  width: 352px;
+  background-color: #eeeed9;
   display: flex;
+  margin: 0 auto;
+  padding: 0px;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  /* text-align: center; */
-  /* align-content: center; */
-  list-style: none;
-  border-radius: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  border: 1px solid #0f0f4f;
 }
 .statsItem {
-  border: 3px solid gray;
-  /* padding: 10px 30px; */
-  background-color: azure;
-  border-radius: 15px;
-}
-.description {
   width: 100%;
-  background-color: #ffffff;
-  margin-bottom: 30px;
-}
-.tag {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: calc(30 / 25);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  color: dimgrey;
-  margin-top: 10px;
+
+  padding: 5px;
 }
-.location {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: calc(30 / 25);
-  align-items: center;
-  text-align: center;
-  color: dimgrey;
+
+.info {
   margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.58;
+  color: #484137;
+}
+
+.label {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.62;
+  text-align: center;
+  color: #22076c;
+}
+
+.quantity {
+  color: #484137;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.58;
+  margin: 10px auto;
 }

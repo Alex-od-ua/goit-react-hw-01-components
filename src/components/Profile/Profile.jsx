@@ -16,22 +16,22 @@ export function Profile({
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.name}>{userName}</p>
-        <p className={css.tag}>{tag}</p>
-        <p className={css.location}>{location}</p>
+        <p className={css.info}>{tag}</p>
+        <p className={css.info}>{location}</p>
       </div>
 
       <ul className={css.stats}>
         <li className={css.statsItem}>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+          <span className={css.label}>Followers</span>
+          <span className={css.quantity}>{followers}</span>
         </li>
         <li className={css.statsItem}>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+          <span className={css.label}>Views</span>
+          <span className={css.quantity}>{views}</span>
         </li>
         <li className={css.statsItem}>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <span className={css.label}>Likes</span>
+          <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
