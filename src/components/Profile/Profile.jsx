@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import css from './Profile.module.css';
 
-export default function Profile({
+export function Profile({
   userName,
   tag,
   location,
@@ -11,24 +12,24 @@ export default function Profile({
 }) {
   //   console.log(props);
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{userName}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{userName}</p>
+        <p className={css.tag}>{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
+      <ul className={css.stats}>
+        <li className={css.statsItem}>
           <span className="label">Followers</span>
           <span className="quantity">{followers}</span>
         </li>
-        <li>
+        <li className={css.statsItem}>
           <span className="label">Views</span>
           <span className="quantity">{views}</span>
         </li>
-        <li>
+        <li className={css.statsItem}>
           <span className="label">Likes</span>
           <span className="quantity">{likes}</span>
         </li>
