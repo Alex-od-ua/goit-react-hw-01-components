@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { FrindListItem } from './FrindListItem';
 
 export function FriendList({ friends }) {

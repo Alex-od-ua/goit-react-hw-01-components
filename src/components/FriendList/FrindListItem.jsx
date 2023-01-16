@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export function FrindListItem({ id, avatar, name, isOnline }) {
   return (
